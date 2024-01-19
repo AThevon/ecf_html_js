@@ -1,0 +1,58 @@
+/* Reset CSS */
+/* ----------------------------------------------- */
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+   background: transparent;
+}
+
+ol,
+ul,
+li {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   vertical-align: baseline;
+   background: transparent;
+   list-style: none;
+}
+
+a {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   background: transparent;
+   cursor: pointer;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mon Compte - Woodies Factory</title>
+      <meta
+         name="description"
+         content="Gérez votre compte chez Woodies Factory, consultez vos commandes, mettez à jour vos informations personnelles."
+      />
+      <link rel="stylesheet" href="../../css/reset.css" />
+      <link rel="stylesheet" href="../../css/fonts.css" />
+      <link rel="stylesheet" href="../../css/global.css" />
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <header>
+         <!-- JAVASCRIPT -->
+      </header>
+      <main>
+         <h1>Gestion de Compte</h1>
+         <section aria-labelledby="personalInfoHeading" class="account">
+            <div class="account-content-left">
+               <h2 id="personalInfoHeading">Informations personnelles</h2>
+               <form action="" method="post" id="accountForm">
+                  <div class="account-content-input">
+                     <label for="firstname">Prénom</label>
+                     <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        value="John"
+                     />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="lastname">Nom</label>
+                     <input
+                        type="text"
+                        name="lastname"
+                        id="lastname"
+                        value="Doe"
+                     />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="password">Mot de passe</label>
+                     <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        value=""
+                     />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="password-confirm"
+                        >Confirmer le mot de passe</label
+                     >
+                     <input
+                        type="password"
+                        name="password-confirm"
+                        id="password-confirm"
+                        value=""
+                     />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="address">Adresse</label>
+                     <input type="text" name="address" id="address" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="city">Ville</label>
+                     <input type="text" name="city" id="city" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="zipcode">Code postal</label>
+                     <input type="text" name="zipcode" id="zipcode" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="country">Pays</label>
+                     <input type="text" name="country" id="country" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="phone">Téléphone</label>
+                     <input type="text" name="phone" id="phone" value="" />
+                  </div>
+                  <div class="account-content-input">
+                     <label for="newsletter">Newsletter</label>
+                     <input
+                        type="checkbox"
+                        name="newsletter"
+                        id="newsletter"
+                        value=""
+                     />
+                  </div>
+                  <div class="account-content-button">
+                     <button type="submit" aria-describedby="formInfo">Enregistrer</button>
+                 </div>
+               </form>
+            </div>
+            <div class="account-content-right">
+               <h3>Commandes</h3>
+               <div class="account-content-order">
+                  <div class="account-content-order-header-id">
+                     <p>Commande n°</p>
+                     <p>123456789</p>
+                  </div>
+                  <div class="account-content-order-header-date">
+                     <p>Passée le</p>
+                     <p>01/01/2021</p>
+                  </div>
+                  <div class="account-content-order-header-total">
+                     <p>Total</p>
+                     <p>123,45€</p>
+                  </div>
+               </div>
+               <div class="account-content-order">
+                  <div class="account-content-order-header-id">
+                     <p>Commande n°</p>
+                     <p>123456789</p>
+                  </div>
+                  <div class="account-content-order-header-date">
+                     <p>Passée le</p>
+                     <p>01/01/2021</p>
+                  </div>
+                  <div class="account-content-order-header-total">
+                     <p>Total</p>
+                     <p>123,45€</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <footer>
+         <p>&copy; 2024 Woodies Factory. Tous droits réservés.</p>
+      </footer>
+   </body>
+
+   <script src="../../classes/Cart.js"></script>
+   <script src="../../scripts/navbar.js"></script>
+   <!-- <script src="scripts.js"></script> -->
+</html>

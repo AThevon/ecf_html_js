@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Contactez-nous - Woodies Factory</title>
+      <meta
+         name="description"
+         content="Contactez Woodies Factory pour toute question, demande de renseignements ou commentaires. Nous sommes là pour vous aider."
+      />
+      <link rel="stylesheet" href="../../css/reset.css" />
+      <link rel="stylesheet" href="../../css/fonts.css" />
+      <link rel="stylesheet" href="../../css/global.css" />
+      <link rel="stylesheet" href="styles.css" />
+      <link
+         rel="icon"
+         href="/ecf_html_js/assets/images/favicon.ico"
+         type="image/x-icon"
+      />
+   </head>
+   <body>
+      <header>
+         <!-- JAVASCRIPT -->
+      </header>
+      <main>
+         <section class="contact-hero" aria-labelledby="contact-hero-heading">
+            <h1 id="contact-hero-heading">Contactez Woodies Factory</h1>
+            <p>
+               Nous sommes toujours ravis d'entendre nos clients. N'hésitez pas
+               à nous contacter.
+            </p>
+         </section>
+
+         <section class="contact-form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Formulaire de Contact</h2>
+            <form action="/send" method="post">
+               <label for="name">Nom:</label>
+               <input type="text" id="name" name="name" required />
+
+               <label for="email">Email:</label>
+               <input type="email" id="email" name="email" required />
+
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" required></textarea>
+
+               <button type="submit">Envoyer</button>
+            </form>
+         </section>
+
+         <section class="contact-info" aria-labelledby="info-heading">
+            <h2 id="info-heading">Informations de Contact</h2>
+            <p><strong>Email:</strong> woodies@gmail.com</p>
+            <p><strong>Téléphone:</strong> +33 6 58 86 00 26</p>
+            <p>
+               <strong>Adresse:</strong> 13 Rue Nationale, 37530 Mosnes, France
+            </p>
+         </section>
+
+         <section class="contact-map" aria-labelledby="map-heading">
+            <h2 id="map-heading">Où Nous Trouver</h2>
+            <div class="map-container">
+               <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.7614928178514!2d1.0986728767212015!3d47.45558849839288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e34cc52c30cb11%3A0x8b659d53f820e92e!2s13%20Rue%20nationale%2C%2037530%20Mosnes!5e0!3m2!1sfr!2sfr!4v1705661672466!5m2!1sfr!2sfr"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+               ></iframe>
+            </div>
+         </section>
+      </main>
+
+      <footer>
+         <p>&copy; 2024 Woodies Factory. Tous droits réservés.</p>
+      </footer>
+
+      <script src="../../classes/Cart.js"></script>
+      <script src="../../scripts/navbar.js"></script>
+   </body>
+</html>
