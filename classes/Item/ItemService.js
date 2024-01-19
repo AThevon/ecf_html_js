@@ -3,7 +3,7 @@ import Item from "./Item.js";
 class ItemService {
    // catch all items
    async getAll() {
-      return fetch("../../data/items.json")
+      return fetch("/data/items.json")
          .then((response) => response.json())
          .then((itemsData) => {
             if (itemsData) {
@@ -30,7 +30,7 @@ class ItemService {
 
    // catch a single item
    async getById(id) {
-      return fetch("../../data/items.json")
+      return fetch("/data/items.json")
          .then((response) => response.json())
          .then((itemData) => {
             // Convert id to number if it's a string
@@ -58,7 +58,7 @@ class ItemService {
    }
 
    async getLatestItems() {
-      return fetch("../../data/items.json")
+      return fetch("/data/items.json")
          .then((response) => response.json())
          .then((itemsData) => {
             if (itemsData) {

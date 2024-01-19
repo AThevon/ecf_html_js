@@ -192,7 +192,7 @@ class CartUI {
       this.cartItemsContainer.classList.add("empty-cart");
       const emptyImage = document.createElement("img");
       emptyImage.classList.add("empty-cart-image");
-      emptyImage.src = "/assets/images/empty_cart.png";
+      emptyImage.src = "../../assets/images/empty_cart.png";
       const emptyCartMessage = document.createElement("p");
       emptyCartMessage.classList.add("empty-cart-message");
       emptyCartMessage.textContent = "Votre panier est vide !";
