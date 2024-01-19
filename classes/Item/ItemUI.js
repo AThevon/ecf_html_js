@@ -3,7 +3,15 @@ import ItemService from "./ItemService.js";
 class ItemUI {
    constructor(cart) {
       this.cart = cart;
-      this.itemsList = document.getElementById("items-list");
+      this.setPage();
+   }
+
+   setPage() {
+      if (window.location.pathname === "/ecf_html_js/pages/item/") {
+         this.itemsList = document.getElementById("item-content");
+      } else {
+         this.itemsList = document.getElementById("items-list");
+      }
    }
 
    createItem(item) {
@@ -15,7 +23,9 @@ class ItemUI {
       const priceLogo = document.createElement("span");
       const addToCartButton = document.createElement("button");
 
-      itemCard.addEventListener("click", () => ItemService.goToItemPage(item.id));
+      itemCard.addEventListener("click", () =>
+         ItemService.goToItemPage(item.id)
+      );
       itemCard.setAttribute("tabindex", "0");
 
       itemImage.src = item.image;

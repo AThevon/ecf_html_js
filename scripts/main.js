@@ -25,4 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch((error) => console.error("Error loading items:", error));
       }
    }
+
+   if (window.location.pathname === "/ecf_html_js/pages/item/") {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+      ItemService.getById(id)
+         .then((item) => {
+            itemUI.displaySingleItem(item);
+         })
+         .catch((error) => console.error("Error loading item:", error));
+   }
 });
