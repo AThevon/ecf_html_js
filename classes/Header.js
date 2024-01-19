@@ -23,7 +23,7 @@ class Header {
    createLogo() {
       const logoContainer = document.createElement("a");
       logoContainer.classList.add("logo-container");
-      logoContainer.href = "/pages/home/";
+      logoContainer.href = "/pages/";
 
       const logoElement = document.createElement("img");
       logoElement.src = "/assets/images/logo.png";
@@ -37,7 +37,7 @@ class Header {
       const links = [
          {
             name: "Accueil",
-            route: "/pages/home/",
+            route: "/pages/",
             template: "home",
          },
          {
