@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
    const itemUI = new ItemUI(cart);
 
    if (document.getElementById("items-list")) {
-      if (window.location.pathname === "/ecf_html_js/pages/home/") {
+      if (window.location.pathname === "/pages/home/") {
          ItemService.getLatestItems()
             .then((items) => {
                itemUI.displayItems(items);
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
    }
 
-   if (window.location.pathname === "/ecf_html_js/pages/item/") {
+   if (window.location.pathname === "/pages/item/") {
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       ItemService.getById(id)

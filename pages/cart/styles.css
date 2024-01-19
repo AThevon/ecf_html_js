@@ -89,10 +89,10 @@
                   background-size: 1.6rem;
                   background-position: center;
                   &:first-child {
-                     background-image: url("/ecf_html_js/assets/images/minus_icon.svg");
+                     background-image: url("/assets/images/minus_icon.svg");
                   }
                   &:last-child {
-                     background-image: url("/ecf_html_js/assets/images/plus_icon.svg");
+                     background-image: url("/assets/images/plus_icon.svg");
                   }
                   &:hover {
                      filter: invert(1);
@@ -179,7 +179,7 @@
             color: #232323;
             &#cart-clear {
                background-color: #232323;
-               background-image: url("/ecf_html_js/assets/images/trash_icon.svg");
+               background-image: url("/assets/images/trash_icon.svg");
                background-repeat: no-repeat;
                background-size: 1.6rem;
                background-position: center;

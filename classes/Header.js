@@ -23,10 +23,10 @@ class Header {
    createLogo() {
       const logoContainer = document.createElement("a");
       logoContainer.classList.add("logo-container");
-      logoContainer.href = "/ecf_html_js/pages/home/";
+      logoContainer.href = "/pages/home/";
 
       const logoElement = document.createElement("img");
-      logoElement.src = "/ecf_html_js/assets/images/logo.png";
+      logoElement.src = "/assets/images/logo.png";
       logoElement.alt = "logo";
       logoContainer.appendChild(logoElement);
 
@@ -37,27 +37,27 @@ class Header {
       const links = [
          {
             name: "Accueil",
-            route: "/ecf_html_js/pages/home/",
+            route: "/pages/home/",
             template: "home",
          },
          {
             name: "Catalogue",
-            route: "/ecf_html_js/pages/catalog/",
+            route: "/pages/catalog/",
             template: "catalog",
          },
          {
             name: "Sur-Mesure",
-            route: "/ecf_html_js/pages/custom/",
+            route: "/pages/custom/",
             template: "custom",
          },
          {
             name: "À Propos",
-            route: "/ecf_html_js/pages/about/",
+            route: "/pages/about/",
             template: "about",
          },
          {
             name: "Contact",
-            route: "/ecf_html_js/pages/contact/",
+            route: "/pages/contact/",
             template: "contact",
          },
       ];
@@ -102,7 +102,7 @@ class Header {
    createUserElement() {
       const userElement = document.createElement("a");
       userElement.id = "user-link";
-      userElement.href = "/ecf_html_js/pages/user/";
+      userElement.href = "/pages/user/";
       userElement.classList.add("user");
       if (window.location.href === userElement.href) {
          userElement.classList.add("is-active");
@@ -114,7 +114,7 @@ class Header {
    createCartElement() {
       const cartElement = document.createElement("a");
       cartElement.id = "cart-link";
-      cartElement.href = "/ecf_html_js/pages/cart/";
+      cartElement.href = "/pages/cart/";
       cartElement.classList.add("cart-link");
       if (window.location.href === cartElement.href) {
          cartElement.classList.add("is-active");

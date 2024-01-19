@@ -7,7 +7,7 @@ class ItemUI {
    }
 
    setPage() {
-      if (window.location.pathname === "/ecf_html_js/pages/item/") {
+      if (window.location.pathname === "/pages/item/") {
          this.itemsList = document.getElementById("item-content");
       } else {
          this.itemsList = document.getElementById("items-list");

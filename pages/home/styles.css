@@ -5,7 +5,7 @@ main {
 section.hero {
    position: relative;
    height: 92vh;
-   background-image: url("/ecf_html_js/assets/images/hero_2.png");
+   background-image: url("/assets/images/hero_2.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;

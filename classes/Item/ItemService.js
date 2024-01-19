@@ -87,7 +87,7 @@ class ItemService {
    }
 
    goToItemPage(id) {
-      window.location.href = `/ecf_html_js/pages/item?id=${id}`;
+      window.location.href = `/pages/item?id=${id}`;
    }
 }
 
