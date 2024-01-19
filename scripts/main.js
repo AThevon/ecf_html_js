@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
    }
 
-   if (window.location.pathname === "/pages/item/") {
+   if (window.location.pathname === "/pages/item") {
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       ItemService.getById(id)

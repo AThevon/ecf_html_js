@@ -23,11 +23,6 @@ class ItemUI {
       const priceLogo = document.createElement("span");
       const addToCartButton = document.createElement("button");
 
-      itemCard.addEventListener("click", () =>
-         ItemService.goToItemPage(item.id)
-      );
-      itemCard.setAttribute("tabindex", "0");
-
       itemImage.src = item.image;
       itemImage.alt = item.name;
 
@@ -52,6 +47,12 @@ class ItemUI {
       itemCard.appendChild(itemInfoContainer);
       itemCard.appendChild(addToCartButton);
 
+      itemCard.setAttribute("tabindex", "0");
+      itemCard.addEventListener("click", () => {
+         console.log("Item card clicked, ID:", item.id); 
+         ItemService.goToItemPage(item.id);
+      });
+      
       return itemCard;
    }
 
@@ -131,7 +132,7 @@ class ItemUI {
 
       singleItemContainer.appendChild(infoContainer);
 
-      itemPage.appendChild(singleItemContainer);
+      this.itemsList.appendChild(singleItemContainer);
 
       document
          .getElementById(`add-to-cart-${item.id}`)

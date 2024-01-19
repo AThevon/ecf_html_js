@@ -33,6 +33,7 @@ class ItemService {
       return fetch("/data/items.json")
          .then((response) => response.json())
          .then((itemData) => {
+            console.log(itemData);
             // Convert id to number if it's a string
             const numericId = Number(id);
 
@@ -87,6 +88,7 @@ class ItemService {
    }
 
    goToItemPage(id) {
+      console.log("Navigating to item with ID:", id); // For debugging
       window.location.href = `/pages/item?id=${id}`;
    }
 }
