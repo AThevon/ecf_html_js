@@ -89,7 +89,7 @@ class ItemService {
 
    goToItemPage(id) {
       console.log("Navigating to item with ID:", id); // For debugging
-      window.location.href = `/pages/item?id=${id}`;
+      window.location.href = `/pages/item/?id=${id}`;
    }
 }
 
