@@ -144,6 +144,11 @@ header {
             background-color: rgb(254, 202, 32);
             color: #232323;
             z-index: 10;
+            transform: scale(0);
+            transition: all 0.1s ease-in-out;
+            &.has-items {
+               transform: scale(1);
+            }
          }
          &:hover {
             transform: scale(1.05);
