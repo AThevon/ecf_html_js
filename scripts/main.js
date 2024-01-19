@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
    const itemUI = new ItemUI(cart);
 
    if (document.getElementById("items-list")) {
-      if (window.location.pathname === "/") {
+      if (window.location.pathname === "/pages/") {
          ItemService.getLatestItems()
             .then((items) => {
                itemUI.displayItems(items);
