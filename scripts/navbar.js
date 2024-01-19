@@ -72,6 +72,9 @@ function loadHeader() {
    const userElement = document.createElement("a");
    userElement.id = "user-link";
    userElement.href = "/ecf_html_js/pages/user/";
+   if (window.location.href === userElement.href) {
+      userElement.classList.add("is-active");
+   }
    userElement.classList.add("user");
    userElement.textContent = "Mon Compte";
    userContainer.appendChild(userElement);
@@ -80,7 +83,7 @@ function loadHeader() {
    const cartElement = document.createElement("a");
    cartElement.id = "cart-link";
    cartElement.href = "/ecf_html_js/pages/cart/";
-   if (window.location.pathname === "/ecf_html_js/pages/cart/") {
+   if (window.location.href === cartElement.href) {
       cartElement.classList.add("is-active");
    }
 

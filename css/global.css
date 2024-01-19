@@ -108,15 +108,15 @@ header {
          border-radius: 10px;
          transition: all 0.15s ease-out;
          &:hover,
-         &:focus-visible {
+         &:focus-visible,
+         &.is-active {
             background-color: #232323;
             outline: 2px solid #f6f6f6;
-            color: #F6F6F6;
+            color: #f6f6f6;
          }
          &:active {
             transform: scale(0.96);
          }
-         
       }
       a#cart-link {
          position: relative;
@@ -213,9 +213,41 @@ button {
    }
 }
 
+label {
+   width: 100%;
+   text-align: left;
+}
+input,
+textarea {
+   font-weight: 400;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   border: none;
+   outline: 1px solid #232323;
+   transition: all 0.1s ease-in-out;
+   &:focus-visible {
+      outline-offset: 1px;
+      transform: scale(1.04);
+   }
+   &:active {
+      transform: scale(0.98);
+   }
+}
+
+textarea {
+   resize: none;
+   height: 10rem;
+}
+
+input[type="checkbox"] {
+   position: relative;
+   width: 1.4rem;
+   height: 1.4rem;
+   margin-right: auto;
+}
+
 footer {
    /* position: fixed; */
-   bottom: 0;
    width: 100%;
    text-align: right;
    padding: 1rem;

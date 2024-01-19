@@ -25,35 +25,30 @@
       <main>
          <section class="contact-hero" aria-labelledby="contact-hero-heading">
             <h1 id="contact-hero-heading">Contactez Woodies Factory</h1>
-            <p>
-               Nous sommes toujours ravis d'entendre nos clients. N'hésitez pas
-               à nous contacter.
-            </p>
+            <p>Nous sommes toujours ravis d'entendre nos clients.</p>
+            <img src="../../assets/images/contact_img.png" alt="" />
+            <p>N'hésitez pas à nous contacter !</p>
          </section>
 
          <section class="contact-form" aria-labelledby="form-heading">
-            <h2 id="form-heading">Formulaire de Contact</h2>
+            <h2 id="form-heading">Formulaire</h2>
             <form action="/send" method="post">
-               <label for="name">Nom:</label>
-               <input type="text" id="name" name="name" required />
+               <div class="form-group">
+                  <label for="name">Nom:</label>
+                  <input type="text" id="name" name="name" required />
+               </div>
 
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required />
+               <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+               </div>
 
-               <label for="message">Message:</label>
-               <textarea id="message" name="message" required></textarea>
-
+               <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+               </div>
                <button type="submit">Envoyer</button>
             </form>
-         </section>
-
-         <section class="contact-info" aria-labelledby="info-heading">
-            <h2 id="info-heading">Informations de Contact</h2>
-            <p><strong>Email:</strong> woodies@gmail.com</p>
-            <p><strong>Téléphone:</strong> +33 6 58 86 00 26</p>
-            <p>
-               <strong>Adresse:</strong> 13 Rue Nationale, 37530 Mosnes, France
-            </p>
          </section>
 
          <section class="contact-map" aria-labelledby="map-heading">
@@ -69,6 +64,14 @@
                   referrerpolicy="no-referrer-when-downgrade"
                ></iframe>
             </div>
+         </section>
+         <section class="contact-info" aria-labelledby="info-heading">
+            <h2 id="info-heading">Informations</h2>
+            <p><strong>Email:</strong> woodies.france@gmail.com</p>
+            <p><strong>Téléphone:</strong> +33 6 58 86 00 26</p>
+            <p>
+               <strong>Adresse:</strong> 13 Rue Nationale, 37530 Mosnes, France
+            </p>
          </section>
       </main>
 
