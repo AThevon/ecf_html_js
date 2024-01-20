@@ -23,46 +23,62 @@
             <div class="title-content">
                <h2>Vous avez une idée en particulier ?</h2>
                <p>
-                  Nous pouvons réaliser vos envies sur-mesure. <br />
-                  Contactez-nous pour nous faire part de votre projet.
+                  Nous pouvons réaliser vos envies sur-mesure ! <br />
+                  Contactez-nous pour nous faire part de votre projet
                </p>
             </div>
             <form action="/send-custom" method="POST" id="custom-order-form">
                <div class="category-container">
-                  <p>Choissisez une catégorie</p>
-                  <!-- radio inputs -->
-                  <div class="radio-container">
-                     <input
-                        type="radio"
-                        name="category"
-                        id="category-1"
-                        value="1"
-                        checked
-                     />
-                     <label for="category-1">Totem</label>
-                     <input
-                        type="radio"
-                        name="category"
-                        id="category-2"
-                        value="2"
-                     />
-                     <label for="category-2">Plaque</label>
-                     <input
-                        type="radio"
-                        name="category"
-                        id="category-3"
-                        value="3"
-                     />
-                     <label for="category-3">Cadre LED</label>
+                  <h3>Choissisez une catégorie</h3>
+                  <div class="radio-all-container">
+                     <div class="radio-container">
+                        <input
+                           type="radio"
+                           name="category"
+                           id="category-1"
+                           value="1"
+                           checked
+                        />
+                        <label for="category-1">Totem</label>
+                        <img src="../../assets/images/icon_totem.png" alt="" />
+                     </div>
+                     <div class="radio-container">
+                        <input
+                           type="radio"
+                           name="category"
+                           id="category-2"
+                           value="2"
+                        />
+                        <label for="category-2">Plaque</label>
+                        <img src="../../assets/images/icon_plate.png" alt="" />
+                     </div>
+                     <div class="radio-container">
+                        <input
+                           type="radio"
+                           name="category"
+                           id="category-3"
+                           value="3"
+                        />
+                        <label for="category-3">Cadre LED</label>
+                        <img src="../../assets/images/icon_led.png" alt="" />
+                     </div>
                   </div>
                </div>
                <div class="file-container">
-                  <p>Ajoutez une ou plusieurs images</p>
-                  <label for="file-upload">Téléchargez vos fichiers</label>
-                  <input type="file" name="files" id="file-upload" multiple />
+                  <h3>Ajoutez une ou plusieurs images</h3>
+                  <div class="file-input">
+                     <label for="file-upload">Depuis votre appareil</label>
+                     <input
+                        type="file"
+                        name="files"
+                        id="file-upload"
+                        multiple
+                     />
+                  </div>
+                  <div id="file-preview"></div>
                </div>
                <div class="description-container">
-                  <p>Ajouter des précisions sur votre demande (facultatif)</p>
+                  <h3>Ajouter des précisions sur votre demande (facultatif)</h3>
                   <textarea
                      name="description"
                      id="description"

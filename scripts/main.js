@@ -38,6 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
    }
 
    if (window.location.pathname === "/pages/custom/") {
-      new CustomOrder("custom-order-form");
+      new CustomOrder("custom-order-form", "file-preview");
    }
 });
