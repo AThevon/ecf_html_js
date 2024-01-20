@@ -19,12 +19,62 @@
          <!-- JAVASCRIPT -->
       </header>
       <main>
-         <section>
-            WORK IN PROGRESS
+         <section class="custom">
+            <div class="title-content">
+               <h2>Vous avez une idée en particulier ?</h2>
+               <p>
+                  Nous pouvons réaliser vos envies sur-mesure. <br />
+                  Contactez-nous pour nous faire part de votre projet.
+               </p>
+            </div>
+            <form action="/send-custom" method="POST" id="custom-order-form">
+               <div class="category-container">
+                  <p>Choissisez une catégorie</p>
+                  <!-- radio inputs -->
+                  <div class="radio-container">
+                     <input
+                        type="radio"
+                        name="category"
+                        id="category-1"
+                        value="1"
+                        checked
+                     />
+                     <label for="category-1">Totem</label>
+                     <input
+                        type="radio"
+                        name="category"
+                        id="category-2"
+                        value="2"
+                     />
+                     <label for="category-2">Plaque</label>
+                     <input
+                        type="radio"
+                        name="category"
+                        id="category-3"
+                        value="3"
+                     />
+                     <label for="category-3">Cadre LED</label>
+                  </div>
+               </div>
+               <div class="file-container">
+                  <p>Ajoutez une ou plusieurs images</p>
+                  <label for="file-upload">Téléchargez vos fichiers</label>
+                  <input type="file" name="files" id="file-upload" multiple />
+               </div>
+               <div class="description-container">
+                  <p>Ajouter des précisions sur votre demande (facultatif)</p>
+                  <textarea
+                     name="description"
+                     id="description"
+                     placeholder="Décrivez votre projet"
+                  ></textarea>
+               </div>
+               <button type="submit">Envoyer</button>
+            </form>
          </section>
       </main>
 
-      <footer>
+      <footer role="contentinfo">
          <p>&copy; 2024 Woodies Factory. Tous droits réservés.</p>
       </footer>
    </body>

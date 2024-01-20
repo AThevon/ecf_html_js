@@ -3,6 +3,7 @@ import CartUI from "../classes/Cart/CartUI.js";
 import Header from "../classes/Header.js";
 import ItemUI from "../classes/Item/ItemUI.js";
 import ItemService from "../classes/Item/ItemService.js";
+import CustomOrder from "../classes/CustomOrder.js";
 
 document.addEventListener("DOMContentLoaded", () => {
    const cart = new Cart();
@@ -34,5 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
             itemUI.displaySingleItem(item);
          })
          .catch((error) => console.error("Error loading item:", error));
+   }
+
+   if (window.location.pathname === "/pages/custom/") {
+      new CustomOrder("custom-order-form");
    }
 });
