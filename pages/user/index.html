@@ -12,6 +12,11 @@
       <link rel="stylesheet" href="../../css/fonts.css" />
       <link rel="stylesheet" href="../../css/global.css" />
       <link rel="stylesheet" href="styles.css" />
+      <link
+         rel="icon"
+         href="../../assets/images/favicon.ico"
+         type="image/x-icon"
+      />
    </head>
    <body>
       <header>
@@ -22,7 +27,7 @@
          <section aria-labelledby="personalInfoHeading" class="account">
             <div class="account-content-left">
                <h2 id="personalInfoHeading">Informations personnelles</h2>
-               <form action="/update-user" method="post" id="accountForm">
+               <form action="/update-user" method="post" id="accountForm" autocomplete="on">
                   <div class="account-content-input">
                      <label for="firstname">Prénom</label>
                      <input
@@ -95,8 +100,10 @@
                      />
                   </div>
                   <div class="account-content-button">
-                     <button type="submit" aria-describedby="formInfo">Enregistrer</button>
-                 </div>
+                     <button type="submit" aria-describedby="formInfo">
+                        Enregistrer
+                     </button>
+                  </div>
                </form>
             </div>
             <div class="account-content-right">

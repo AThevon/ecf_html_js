@@ -79,6 +79,10 @@ section.account {
          display: grid;
          grid-template-columns: repeat(2, 1fr);
          gap: 1rem;
+         padding: 1rem 2rem;
+         background-color: #F6F6F6;
+         outline: 1px solid #232323;
+         border-radius: 10px;
       }
    }
 }

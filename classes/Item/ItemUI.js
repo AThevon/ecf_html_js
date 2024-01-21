@@ -49,7 +49,6 @@ class ItemUI {
 
       itemCard.setAttribute("tabindex", "0");
       itemCard.addEventListener("click", () => {
-         console.log("Item card clicked, ID:", item.id); 
          ItemService.goToItemPage(item.id);
       });
       

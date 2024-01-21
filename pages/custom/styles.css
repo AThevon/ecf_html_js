@@ -1,5 +1,6 @@
 section.custom {
    text-align: center;
+   padding-block: 1rem 3rem;
    .title-content {
       margin-block: 3rem;
       h2 {
@@ -38,10 +39,11 @@ section.custom {
                   height: 100%;
                   background-color: #f6f6f6;
                   filter: brightness(1.1);
-                  outline: none;
+                  outline: 1px solid #232323;
                   cursor: pointer;
                   transition: all 0.3s ease;
                   &:checked {
+                     outline: none;
                      filter: brightness(1.02);
                      background-image: linear-gradient(
                         125deg,
@@ -120,6 +122,7 @@ section.custom {
                transition: all 0.2s ease;
                cursor: pointer;
                filter: brightness(1.2);
+               outline: 1px solid #232323;
                &::before,
                &::after {
                   content: "";
@@ -167,15 +170,14 @@ section.custom {
             }
          }
          #file-preview {
+            width: 100%;
+            overflow: scroll;
             display: flex;
-            align-items: center;
-            justify-content: center;
             gap: 1.2rem;
             img {
                width: 25rem;
                height: 25rem;
                object-fit: contain;
-               border-radius: 10px;
             }
             button {
                background-color: #f6f6f6;
@@ -208,6 +210,30 @@ section.custom {
          textarea {
             width: 50%;
             margin-inline: auto;
+         }
+      }
+      button {
+         background-color: #f6f6f6;
+         border-radius: 10px;
+         padding: 1rem 1.4rem;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 1.2rem;
+         width: 25rem;
+         margin-inline: auto;
+         transition: all 0.2s ease;
+         outline: 1px solid #232323;
+         &:hover,
+         &:focus-visible {
+            background-color: #232323;
+            transform: scale(1.02);
+         }
+         &:focus-visible {
+            outline: 2px solid #232323;
+            outline-offset: 2px;
+         }
+         &:active {
+            transform: scale(1);
          }
       }
    }
